@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/youngfan/CLionProjects/OpenGL_Course
+CMAKE_SOURCE_DIR = /Users/youngfan/Documents/GitHub/OpenGL_Course
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/youngfan/CLionProjects/OpenGL_Course/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/OpenGL_Course.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/OpenGL_Course.dir/flags.make
 
 CMakeFiles/OpenGL_Course.dir/main.cpp.o: CMakeFiles/OpenGL_Course.dir/flags.make
 CMakeFiles/OpenGL_Course.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngfan/CLionProjects/OpenGL_Course/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OpenGL_Course.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGL_Course.dir/main.cpp.o -c /Users/youngfan/CLionProjects/OpenGL_Course/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OpenGL_Course.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGL_Course.dir/main.cpp.o -c /Users/youngfan/Documents/GitHub/OpenGL_Course/main.cpp
 
 CMakeFiles/OpenGL_Course.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL_Course.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/youngfan/CLionProjects/OpenGL_Course/main.cpp > CMakeFiles/OpenGL_Course.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/youngfan/Documents/GitHub/OpenGL_Course/main.cpp > CMakeFiles/OpenGL_Course.dir/main.cpp.i
 
 CMakeFiles/OpenGL_Course.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL_Course.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/youngfan/CLionProjects/OpenGL_Course/main.cpp -o CMakeFiles/OpenGL_Course.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/youngfan/Documents/GitHub/OpenGL_Course/main.cpp -o CMakeFiles/OpenGL_Course.dir/main.cpp.s
 
 CMakeFiles/OpenGL_Course.dir/Shader.cpp.o: CMakeFiles/OpenGL_Course.dir/flags.make
 CMakeFiles/OpenGL_Course.dir/Shader.cpp.o: ../Shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngfan/CLionProjects/OpenGL_Course/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGL_Course.dir/Shader.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGL_Course.dir/Shader.cpp.o -c /Users/youngfan/CLionProjects/OpenGL_Course/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGL_Course.dir/Shader.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGL_Course.dir/Shader.cpp.o -c /Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.cpp
 
 CMakeFiles/OpenGL_Course.dir/Shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL_Course.dir/Shader.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/youngfan/CLionProjects/OpenGL_Course/Shader.cpp > CMakeFiles/OpenGL_Course.dir/Shader.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.cpp > CMakeFiles/OpenGL_Course.dir/Shader.cpp.i
 
 CMakeFiles/OpenGL_Course.dir/Shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL_Course.dir/Shader.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/youngfan/CLionProjects/OpenGL_Course/Shader.cpp -o CMakeFiles/OpenGL_Course.dir/Shader.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.cpp -o CMakeFiles/OpenGL_Course.dir/Shader.cpp.s
 
 # Object files for target OpenGL_Course
 OpenGL_Course_OBJECTS = \
@@ -97,7 +97,7 @@ OpenGL_Course: CMakeFiles/OpenGL_Course.dir/build.make
 OpenGL_Course: /usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.dylib
 OpenGL_Course: /usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.dylib
 OpenGL_Course: CMakeFiles/OpenGL_Course.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/youngfan/CLionProjects/OpenGL_Course/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable OpenGL_Course"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable OpenGL_Course"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenGL_Course.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -110,6 +110,6 @@ CMakeFiles/OpenGL_Course.dir/clean:
 .PHONY : CMakeFiles/OpenGL_Course.dir/clean
 
 CMakeFiles/OpenGL_Course.dir/depend:
-	cd /Users/youngfan/CLionProjects/OpenGL_Course/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/youngfan/CLionProjects/OpenGL_Course /Users/youngfan/CLionProjects/OpenGL_Course /Users/youngfan/CLionProjects/OpenGL_Course/cmake-build-debug /Users/youngfan/CLionProjects/OpenGL_Course/cmake-build-debug /Users/youngfan/CLionProjects/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/youngfan/Documents/GitHub/OpenGL_Course /Users/youngfan/Documents/GitHub/OpenGL_Course /Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug /Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug /Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/OpenGL_Course.dir/depend
 

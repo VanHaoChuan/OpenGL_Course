@@ -4,8 +4,6 @@
 
 #include "Shader.h"
 
-
-
 Shader::Shader(const char* vertexPath, const char* fragmentPath) {
     std::ifstream vertexFile;
     std::ifstream fragmentFile;
@@ -15,8 +13,8 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath) {
     std::stringstream fragmentSString;
     unsigned int vertexShader,fragmentShader;
     char errorLog[512];
-    vertexFile.exceptions(std::ifstream::failbit||std::ifstream::badbit);
-    fragmentFile.exceptions(std::ifstream::failbit||std::ifstream::badbit);
+    vertexFile.exceptions(std::ifstream::badbit || std::ifstream::failbit);
+    fragmentFile.exceptions(std::ifstream::badbit || std::ifstream::failbit);
     try
     {
         if (!vertexFile.is_open() || !fragmentFile.is_open())

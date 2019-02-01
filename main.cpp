@@ -1,9 +1,9 @@
 #include <iostream>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
+#include "glm/glm.hpp"
+#include "glm/gtc/matrix_transform.hpp"
+#include "glm/gtc/type_ptr.hpp"
 #include "Shader.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
@@ -26,6 +26,7 @@ void WindowBufferSizeChange(GLFWwindow * , int, int);
 void ProcessInput(GLFWwindow *);
 int main()
 {
+
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,3);
@@ -92,13 +93,17 @@ int main()
     stbi_image_free(data);
 
     Shader * shader = new Shader("vertex.glsl","fragment.glsl");
+    glm::mat4 trans;
+    trans = glm::rotate(trans, glm::radians(90.0f), glm::vec3(0.0, 0.0, 1.0));
+    trans = glm::scale(trans, glm::vec3(0.5, 0.5, 0.5));
+
     while (!glfwWindowShouldClose(window))
     {
         glClearColor(0,0.5f,0,1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
         shader->UseProgram();
-
+        glUniformMatrix4fv(glGetUniformLocation(shader->shaderProgram,"transform"),1,GL_FALSE,glm::value_ptr(trans));
         glUniform1i(glGetUniformLocation(shader->shaderProgram,"texture_"),0);
         glUniform1i(glGetUniformLocation(shader->shaderProgram,"textureFace"),3);
         glDrawElements(GL_TRIANGLES,6,GL_UNSIGNED_INT,0);
