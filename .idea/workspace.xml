@@ -12,10 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af0d5e97-d666-4ab5-8b0c-4c325f777f05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Shader.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/Shader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL_Course" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL_Course" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vertex.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/vertex.glsl" afterDir="false" />
     </list>
@@ -41,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="104" column="8" lean-forward="true" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+            <state relative-caret-position="95">
+              <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -69,6 +65,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>glDraw</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,12 +143,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549030120203</updated>
-      <workItem from="1549030121804" duration="3896000" />
+      <workItem from="1549030121804" duration="5636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3896000" />
+    <option name="totallyTimeSpent" value="5636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -232,8 +233,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="104" column="8" lean-forward="true" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+        <state relative-caret-position="95">
+          <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

@@ -11,16 +11,59 @@
 #define WINDOW_TITLE "OpenGL Core"
 #define WINDOW_WIDTH 800
 #define WINDOW_HEIGHT 600
-float vertices[] = {
-//     ---- 位置 ----       ---- 颜色 ----     - 纹理坐标 -
-        0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // 右上
-        0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,   // 右下
-        -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // 左下
-        -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f    // 左上
-};
+//float vertices[] = {
+////     ---- 位置 ----       ---- 颜色 ----     - 纹理坐标 -
+//        0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // 右上
+//        0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,   // 右下
+//        -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // 左下
+//        -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f    // 左上
+//};
 unsigned int indices[] = { // 注意索引从0开始!
         0, 1, 3, // 第一个三角形
         1, 2, 3  // 第二个三角形
+};
+float vertices[] = {
+        -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
+        0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
+        0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+        0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+        -0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
+        -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
+
+        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+        0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
+        0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
+        0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
+        -0.5f,  0.5f,  0.5f,  0.0f, 1.0f,
+        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+
+        -0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+        -0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+        -0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+
+        0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+        0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+        0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+        0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+        0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+        0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+
+        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+        0.5f, -0.5f, -0.5f,  1.0f, 1.0f,
+        0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
+        0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
+        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+
+        -0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
+        0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+        0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+        0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+        -0.5f,  0.5f,  0.5f,  0.0f, 0.0f,
+        -0.5f,  0.5f, -0.5f,  0.0f, 1.0f
 };
 void WindowBufferSizeChange(GLFWwindow * , int, int);
 void ProcessInput(GLFWwindow *);
@@ -49,6 +92,7 @@ int main()
         return -1;
     }
     glfwSetFramebufferSizeCallback(window,WindowBufferSizeChange);
+    glEnable(GL_DEPTH_TEST);
 
     unsigned int VAO,VBO,EBO;
     glGenBuffers(1,&VBO);
@@ -58,15 +102,19 @@ int main()
     glBindBuffer(GL_ARRAY_BUFFER,VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
     glBindVertexArray(VAO);
-    glVertexAttribPointer(4,3,GL_FLOAT,GL_FALSE,8 * sizeof(float),(void*)0);
-    glEnableVertexAttribArray(4);//Vertex
+    //glVertexAttribPointer(4,3,GL_FLOAT,GL_FALSE,8 * sizeof(float),(void*)0);
+    //glEnableVertexAttribArray(4);//Vertex
 
-    glVertexAttribPointer(2,3,GL_FLOAT,GL_FALSE,8 * sizeof(float),(void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(2);//Color
+    //glVertexAttribPointer(2,3,GL_FLOAT,GL_FALSE,8 * sizeof(float),(void*)(3 * sizeof(float)));
+    //glEnableVertexAttribArray(2);//Color
 
-    glVertexAttribPointer(0,2,GL_FLOAT,GL_FALSE,8 * sizeof(float),(void*)(6 * sizeof(float)));
-    glEnableVertexAttribArray(0);//UV
+    //glVertexAttribPointer(0,2,GL_FLOAT,GL_FALSE,8 * sizeof(float),(void*)(6 * sizeof(float)));
+    //glEnableVertexAttribArray(0);//UV
 
+    glVertexAttribPointer(1,3,GL_FLOAT,GL_FALSE,5 * sizeof(float),(void*)0);
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(0,2,GL_FLOAT,GL_FALSE,5 * sizeof(float),(void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(0);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices),indices,GL_STATIC_DRAW);
 
@@ -91,7 +139,6 @@ int main()
     glTexImage2D(GL_TEXTURE_2D,0,GL_RGBA,width,height,0,GL_RGBA,GL_UNSIGNED_BYTE,data);
     glGenerateMipmap(GL_TEXTURE_2D);
     stbi_image_free(data);
-
     Shader * shader = new Shader("vertex.glsl","fragment.glsl");
     shader->UseProgram();
 
@@ -100,7 +147,8 @@ int main()
     {
 
         glClearColor(0,0.5f,0,1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+
+        glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::rotate(model,(float)glfwGetTime()*glm::radians(-55.0f),glm::vec3(1,0,0));
         glm::mat4 view = glm::mat4(1.0f);
@@ -118,7 +166,8 @@ int main()
         shader->SendUniformMat4(projection,"projection");
         glUniform1i(glGetUniformLocation(shader->shaderProgram,"texture_"),0);
         glUniform1i(glGetUniformLocation(shader->shaderProgram,"textureFace"),3);
-        glDrawElements(GL_TRIANGLES,6,GL_UNSIGNED_INT,0);
+        //glDrawElements(GL_TRIANGLES,6,GL_UNSIGNED_INT,0);
+        glDrawArrays(GL_TRIANGLES,0,36);
         glfwSwapBuffers(window);
         ProcessInput(window);
         glfwPollEvents();
