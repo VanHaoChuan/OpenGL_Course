@@ -4,9 +4,12 @@ layout(location = 2)in vec3 color_;
 layout(location = 0)in vec2 UV_;
 out vec3 color;
 out vec2 coord;
-uniform mat4 transform;
+uniform mat4 model;
+uniform mat4 view;
+uniform mat4 projection;
+//uniform mat4 transform;
 void main()
 {
-    gl_Position =  transform * vec4(vertics_,1.0f);
+    gl_Position =  /*transform* */ projection * view * model * vec4(vertics_,1.0f);
     coord = UV_;
 }

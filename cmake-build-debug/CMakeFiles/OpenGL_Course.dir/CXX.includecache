@@ -17,6 +17,12 @@ string
 -
 GL/glew.h
 -
+glm/glm.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/glm.hpp
+glm/gtc/matrix_transform.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtc/matrix_transform.hpp
+glm/gtc/type_ptr.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtc/type_ptr.hpp
 GLFW/glfw3.h
 -
 

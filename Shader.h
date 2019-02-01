@@ -10,10 +10,14 @@
 #include <sstream>
 #include <string>
 #include <GL/glew.h>
+#include "glm/glm.hpp"
+#include "glm/gtc/matrix_transform.hpp"
+#include "glm/gtc/type_ptr.hpp"
 #include <GLFW/glfw3.h>
 class Shader {
 public:
-    Shader(const char *vertexPath, const char *fragmentPath);
+    Shader(const char * vertexPath, const char * fragmentPath);
+    void SendUniformMat4(glm::mat4 matrix,const char * targetName);
     void UseProgram();
     std::string vertexString;
     std::string fragmentString;

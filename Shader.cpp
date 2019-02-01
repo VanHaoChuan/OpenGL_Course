@@ -3,8 +3,7 @@
 //
 
 #include "Shader.h"
-
-Shader::Shader(const char* vertexPath, const char* fragmentPath) {
+    Shader::Shader(const char* vertexPath, const char* fragmentPath) {
     std::ifstream vertexFile;
     std::ifstream fragmentFile;
     vertexFile.open(vertexPath);
@@ -69,4 +68,8 @@ void Shader::CheckShaderError(unsigned int shaderID, char *kind,char* result) {
         std::cout<<result<<std::endl;
 
     }
+}
+void Shader::SendUniformMat4(glm::mat4 matrix,const char * targetName)
+{
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgram,targetName),1,GL_FALSE,glm::value_ptr(matrix));
 }
