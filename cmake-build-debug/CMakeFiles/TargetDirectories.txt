@@ -1,0 +1,3 @@
+/Users/youngfan/CLionProjects/OpenGL_Course/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/youngfan/CLionProjects/OpenGL_Course/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/youngfan/CLionProjects/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir
