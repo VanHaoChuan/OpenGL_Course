@@ -81,12 +81,17 @@ glm::vec3 cubePositions[] = {
         glm::vec3(1.5f, 0.2f, -1.5f),
         glm::vec3(-1.3f, 1.0f, -1.5f)
 };
+double lastX, lastY;
+
+bool firstMouse = true;
 
 void WindowBufferSizeChange(GLFWwindow *, int, int);
 
 void ProcessInput(GLFWwindow *);
 
 void LoadImage(const char *, GLenum, GLenum, GLenum);
+
+void ProcessMouse(GLFWwindow *, double, double);
 
 int main() {
 
@@ -102,6 +107,7 @@ int main() {
         return -1;
     }
     glfwMakeContextCurrent(window);
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
     glewExperimental = static_cast<GLboolean>(true);
     if (glewInit() != GLEW_OK) {
@@ -110,6 +116,7 @@ int main() {
         return -1;
     }
     glfwSetFramebufferSizeCallback(window, WindowBufferSizeChange);
+    glfwSetCursorPosCallback(window, ProcessMouse);
     glEnable(GL_DEPTH_TEST);
 
     unsigned int VAO, VBO, EBO;
@@ -144,6 +151,8 @@ int main() {
     LoadImage("awesomeface.png", GL_TEXTURE3, GL_RGBA, GL_RGBA);
     Shader *shader = new Shader("vertex.glsl", "fragment.glsl");
     shader->UseProgram();
+    //Camera camera(glm::vec3(0, 0, 3), glm::vec3(0, 0, 0), glm::vec3(0, 1, 0));;
+    Camera camera(glm::vec3(0, 0, 3), glm::radians(15.0f), glm::radians(180.0f), glm::vec3(0, 1, 0));
     while (!glfwWindowShouldClose(window)) {
 
         glClearColor(0, 0.5f, 0, 1.0f);
@@ -151,7 +160,6 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         //glm::mat4 model = glm::mat4(1.0f);
         //model = glm::rotate(model,(float)glfwGetTime()*glm::radians(-55.0f),glm::vec3(1,0,0));
-        Camera camera(glm::vec3(glfwGetTime() * 40, 0, 3), glm::vec3(0, 0, 0), glm::vec3(0, 1, 0));
         glm::mat4 view = glm::mat4(1.0f);
         view = camera.GetViewMatrix();
         glm::mat4 projection = glm::mat4(1.0f);
@@ -209,4 +217,21 @@ void LoadImage(const char *fileName, GLenum textureChannel, GLenum localFormat, 
     } else {
         std::cout << "Texture loaded failed." << std::endl;
     }
+}
+
+void ProcessMouse(GLFWwindow *window, double xPos, double yPos) {
+
+    double deltaX, deltaY;
+    if (firstMouse)
+    {
+        lastX = xPos;
+        lastY = yPos;
+        firstMouse = false;
+    }
+    deltaX = xPos - lastX;
+    deltaY = yPos - lastY;
+    lastX = xPos;
+    lastY = yPos;
+    std::cout << "x+" << deltaX << std::endl;
+    std::cout << "y+" << deltaY << std::endl;
 }
