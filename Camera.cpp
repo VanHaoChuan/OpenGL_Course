@@ -48,3 +48,8 @@ void Camera::ProcessMouseMovement(float deltaX, float deltaY) {
     yaw -= deltaX * sensitivity;
     UpdateCameraVectors();
 }
+
+void Camera::UpdateCameraPosition() {
+    position += forward * speedZ;
+    position += right * speedX;
+}

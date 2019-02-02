@@ -192,6 +192,7 @@ int main() {
         glfwSwapBuffers(window);
         ProcessInput(window);
         glfwPollEvents();
+        camera->UpdateCameraPosition();
     }
     glfwTerminate();
     return 0;
@@ -204,6 +205,20 @@ void WindowBufferSizeChange(GLFWwindow *window, int _width, int _height) {
 void ProcessInput(GLFWwindow *window) {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
+
+
+    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+        camera->speedZ = 0.01f;
+    else if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+        camera->speedZ = -0.01f;
+    else if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+        camera->speedX = 0.01f;
+    else if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+        camera->speedX = -0.01f;
+    else {
+        camera->speedZ = 0;
+        camera->speedX = 0;
+    }
 }
 
 void LoadImage(const char *fileName, GLenum textureChannel, GLenum localFormat, GLenum targetFormat) {

@@ -26,7 +26,9 @@ public:
     float pitch;
     float yaw;
     float sensitivity;
-
+    float speedZ;
+    float speedX;
+    void UpdateCameraPosition();
     glm::mat4 GetViewMatrix();
 
 private:
