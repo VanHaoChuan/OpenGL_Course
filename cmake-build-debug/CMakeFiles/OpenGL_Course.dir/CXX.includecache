@@ -765,6 +765,8 @@ glm/gtc/type_ptr.hpp
 /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtc/type_ptr.hpp
 Shader.h
 /Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.h
+vector
+-
 stb_image.h
 /Users/youngfan/Documents/GitHub/OpenGL_Course/stb_image.h
 Camera.h
