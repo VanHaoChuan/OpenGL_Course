@@ -14,6 +14,8 @@ public:
 
     Camera(glm::vec3 _position, float _pitch, float _yaw, glm::vec3 _worldUp);
 
+    void ProcessMouseMovement(float deltaX, float deltaY);
+
     ~Camera();
 
     glm::vec3 position;
@@ -23,6 +25,7 @@ public:
     glm::vec3 up;
     float pitch;
     float yaw;
+    float sensitivity;
 
     glm::mat4 GetViewMatrix();
 

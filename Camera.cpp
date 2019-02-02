@@ -5,6 +5,7 @@
 #include "Camera.h"
 
 Camera::Camera(glm::vec3 _position, glm::vec3 targetPos, glm::vec3 _worldUp) {
+    sensitivity = 0.001f;
     position = _position;
     forward = glm::normalize(targetPos - position);
     worldUp = _worldUp;
@@ -13,6 +14,7 @@ Camera::Camera(glm::vec3 _position, glm::vec3 targetPos, glm::vec3 _worldUp) {
 }
 
 Camera::Camera(glm::vec3 _position, float _pitch, float _yaw, glm::vec3 _worldUp) {
+    sensitivity = 0.001f;
     position = _position;
     worldUp = _worldUp;
     yaw = _yaw;
@@ -41,3 +43,8 @@ void Camera::UpdateCameraVectors() {
     up = glm::normalize(glm::cross(right, forward));
 }
 
+void Camera::ProcessMouseMovement(float deltaX, float deltaY) {
+    pitch -= deltaY * sensitivity;
+    yaw -= deltaX * sensitivity;
+    UpdateCameraVectors();
+}

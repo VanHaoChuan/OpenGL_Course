@@ -82,8 +82,9 @@ glm::vec3 cubePositions[] = {
         glm::vec3(-1.3f, 1.0f, -1.5f)
 };
 double lastX, lastY;
-
 bool firstMouse = true;
+Camera *camera = new Camera(glm::vec3(0, 0, 3), glm::radians(15.0f), glm::radians(180.0f), glm::vec3(0, 1, 0));
+
 
 void WindowBufferSizeChange(GLFWwindow *, int, int);
 
@@ -109,6 +110,7 @@ int main() {
     glfwMakeContextCurrent(window);
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
+
     glewExperimental = static_cast<GLboolean>(true);
     if (glewInit() != GLEW_OK) {
         std::cout << "Init GLEW failed." << std::endl;
@@ -118,6 +120,11 @@ int main() {
     glfwSetFramebufferSizeCallback(window, WindowBufferSizeChange);
     glfwSetCursorPosCallback(window, ProcessMouse);
     glEnable(GL_DEPTH_TEST);
+
+    Shader *shader = new Shader("vertex.glsl", "fragment.glsl");
+    shader->UseProgram();
+    //Camera camera(glm::vec3(0, 0, 3), glm::vec3(0, 0, 0), glm::vec3(0, 1, 0));;
+
 
     unsigned int VAO, VBO, EBO;
     glGenBuffers(1, &VBO);
@@ -149,10 +156,6 @@ int main() {
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     LoadImage("wall.jpg", GL_TEXTURE0, GL_RGB, GL_RGB);
     LoadImage("awesomeface.png", GL_TEXTURE3, GL_RGBA, GL_RGBA);
-    Shader *shader = new Shader("vertex.glsl", "fragment.glsl");
-    shader->UseProgram();
-    //Camera camera(glm::vec3(0, 0, 3), glm::vec3(0, 0, 0), glm::vec3(0, 1, 0));;
-    Camera camera(glm::vec3(0, 0, 3), glm::radians(15.0f), glm::radians(180.0f), glm::vec3(0, 1, 0));
     while (!glfwWindowShouldClose(window)) {
 
         glClearColor(0, 0.5f, 0, 1.0f);
@@ -161,7 +164,7 @@ int main() {
         //glm::mat4 model = glm::mat4(1.0f);
         //model = glm::rotate(model,(float)glfwGetTime()*glm::radians(-55.0f),glm::vec3(1,0,0));
         glm::mat4 view = glm::mat4(1.0f);
-        view = camera.GetViewMatrix();
+        view = camera->GetViewMatrix();
         glm::mat4 projection = glm::mat4(1.0f);
         projection = glm::perspective(glm::radians(45.0f), (float) (WINDOW_WIDTH / WINDOW_HEIGHT), 0.1f, 100.0f);
 
@@ -222,8 +225,7 @@ void LoadImage(const char *fileName, GLenum textureChannel, GLenum localFormat, 
 void ProcessMouse(GLFWwindow *window, double xPos, double yPos) {
 
     double deltaX, deltaY;
-    if (firstMouse)
-    {
+    if (firstMouse) {
         lastX = xPos;
         lastY = yPos;
         firstMouse = false;
@@ -232,6 +234,5 @@ void ProcessMouse(GLFWwindow *window, double xPos, double yPos) {
     deltaY = yPos - lastY;
     lastX = xPos;
     lastY = yPos;
-    std::cout << "x+" << deltaX << std::endl;
-    std::cout << "y+" << deltaY << std::endl;
+    camera->ProcessMouseMovement(static_cast<float>(deltaX), static_cast<float>(deltaY));
 }
