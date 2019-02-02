@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/youngfan/Documents/GitHub/OpenGL_Course/Camera.cpp" "/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/Camera.cpp.o"
   "/Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.cpp" "/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/Shader.cpp.o"
   "/Users/youngfan/Documents/GitHub/OpenGL_Course/main.cpp" "/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/main.cpp.o"
   )

@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/youngfan/Documents/GitHub/OpenGL_Course/Camera.h
+glm/glm.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/glm.hpp
+glm/gtc/matrix_transform.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtc/matrix_transform.hpp
+
 /Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.h
 iostream
 -
@@ -761,6 +767,8 @@ Shader.h
 /Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.h
 stb_image.h
 /Users/youngfan/Documents/GitHub/OpenGL_Course/stb_image.h
+Camera.h
+/Users/youngfan/Documents/GitHub/OpenGL_Course/Camera.h
 
 /Users/youngfan/Documents/GitHub/OpenGL_Course/stb_image.h
 stb_image.h
