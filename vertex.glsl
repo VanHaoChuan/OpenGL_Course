@@ -14,6 +14,7 @@ void main()
 {
     fragPos = vec3(model * vec4(vertics_,1.0f));
     aNormal = mat3(model) * normal;
+
     gl_Position =  /*transform* */ projection * view * model * vec4(vertics_,1.0f);
     //coord = UV;
 }
