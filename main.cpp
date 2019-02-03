@@ -28,50 +28,93 @@ unsigned int indices[] = { // 注意索引从0开始!
         0, 1, 3, // 第一个三角形
         1, 2, 3  // 第二个三角形
 };
+//float vertices[] = {
+//        -0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
+//        0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
+//        0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
+//        0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
+//        -0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
+//        -0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
+//
+//        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
+//        0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
+//        0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
+//        0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
+//        -0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
+//        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
+//
+//        -0.5f, 0.5f, 0.5f, -1.0f, 0.0f, 0.0f,
+//        -0.5f, 0.5f, -0.5f, -1.0f, 0.0f, 0.0f,
+//        -0.5f, -0.5f, -0.5f, -1.0f, 0.0f, 0.0f,
+//        -0.5f, -0.5f, -0.5f, -1.0f, 0.0f, 0.0f,
+//        -0.5f, -0.5f, 0.5f, -1.0f, 0.0f, 0.0f,
+//        -0.5f, 0.5f, 0.5f, -1.0f, 0.0f, 0.0f,
+//
+//        0.5f, 0.5f, 0.5f, 1.0f, 0.0f, 0.0f,
+//        0.5f, 0.5f, -0.5f, 1.0f, 0.0f, 0.0f,
+//        0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f,
+//        0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f,
+//        0.5f, -0.5f, 0.5f, 1.0f, 0.0f, 0.0f,
+//        0.5f, 0.5f, 0.5f, 1.0f, 0.0f, 0.0f,
+//
+//        -0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f,
+//        0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f,
+//        0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f,
+//        0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f,
+//        -0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f,
+//        -0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f,
+//
+//        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f,
+//        0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f,
+//        0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f,
+//        0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f,
+//        -0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f,
+//        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f
+//};
 float vertices[] = {
-        -0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
-        0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
-        0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
-        0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
-        -0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
-        -0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f,
+        // positions          // normals           // texture coords
+        -0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f,
+        0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f,
+        0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f,
+        0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f,
+        -0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 1.0f,
+        -0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f,
 
-        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
-        0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
-        0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
-        0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
-        -0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
-        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f,
+        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
+        0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f,
+        0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f,
+        0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f,
+        -0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f,
+        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
 
-        -0.5f, 0.5f, 0.5f, -1.0f, 0.0f, 0.0f,
-        -0.5f, 0.5f, -0.5f, -1.0f, 0.0f, 0.0f,
-        -0.5f, -0.5f, -0.5f, -1.0f, 0.0f, 0.0f,
-        -0.5f, -0.5f, -0.5f, -1.0f, 0.0f, 0.0f,
-        -0.5f, -0.5f, 0.5f, -1.0f, 0.0f, 0.0f,
-        -0.5f, 0.5f, 0.5f, -1.0f, 0.0f, 0.0f,
+        -0.5f, 0.5f, 0.5f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
+        -0.5f, 0.5f, -0.5f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
+        -0.5f, -0.5f, -0.5f, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+        -0.5f, -0.5f, -0.5f, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+        -0.5f, -0.5f, 0.5f, -1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+        -0.5f, 0.5f, 0.5f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
 
-        0.5f, 0.5f, 0.5f, 1.0f, 0.0f, 0.0f,
-        0.5f, 0.5f, -0.5f, 1.0f, 0.0f, 0.0f,
-        0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f,
-        0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f,
-        0.5f, -0.5f, 0.5f, 1.0f, 0.0f, 0.0f,
-        0.5f, 0.5f, 0.5f, 1.0f, 0.0f, 0.0f,
+        0.5f, 0.5f, 0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
+        0.5f, 0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
+        0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+        0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+        0.5f, -0.5f, 0.5f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+        0.5f, 0.5f, 0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
 
-        -0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f,
-        0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f,
-        0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f,
-        0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f,
-        -0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f,
-        -0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f,
+        -0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f,
+        0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f, 1.0f, 1.0f,
+        0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f,
+        0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f,
+        -0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f,
+        -0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f,
 
-        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f,
-        0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f,
-        0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f,
-        0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f,
-        -0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f,
-        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f
+        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f,
+        0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 1.0f, 1.0f,
+        0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
+        0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
+        -0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f,
+        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f
 };
-
 glm::vec3 cubePositions[] = {
         glm::vec3(0.0f, 0.0f, 0.0f),
         glm::vec3(2.0f, 5.0f, -15.0f),
@@ -146,31 +189,41 @@ int main() {
     //glVertexAttribPointer(0,2,GL_FLOAT,GL_FALSE,8 * sizeof(float),(void*)(6 * sizeof(float)));
     //glEnableVertexAttribArray(0);//UV
 
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *) 0);
-    glEnableVertexAttribArray(1);
+    //glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *) 0);
+    //glEnableVertexAttribArray(1);
     //glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *) (3 * sizeof(float)));
     //glEnableVertexAttribArray(0);
-    glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *) (3 * sizeof(float)));
+    //glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *) (3 * sizeof(float)));
+    //glEnableVertexAttribArray(2);
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *) 0);
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *) (3 * sizeof(float)));
     glEnableVertexAttribArray(2);
+    glVertexAttribPointer(3, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *) (6 * sizeof(float)));
+    glEnableVertexAttribArray(3);
+
+
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+
+
+
     //LoadImage("wall.jpg", GL_TEXTURE0, GL_RGB, GL_RGB);
     //LoadImage("awesomeface.png", GL_TEXTURE3, GL_RGBA, GL_RGBA);
-
-    glUniform3f(glGetUniformLocation(shader->shaderProgram, "objColor"), 0.1, 0.1f, 0.31f);
-    glUniform3f(glGetUniformLocation(shader->shaderProgram, "ambientColor"), 0.5, 0.5f, 0.5f);
+    glUniform3f(glGetUniformLocation(shader->shaderProgram, "objColor"), 1, 1, 1);
+    glUniform3f(glGetUniformLocation(shader->shaderProgram, "ambientColor"), 0.3f, 0.3f, 0.3f);
     glUniform3f(glGetUniformLocation(shader->shaderProgram, "lightPos"), 10, 10, 10);
     glUniform3f(glGetUniformLocation(shader->shaderProgram, "lightColor"), 1, 1, 1);
-    Material *material = new Material(shader, glm::vec3(0, 0, 1), glm::vec3(1, 1, 1), glm::vec3(1, 1, 1), 256.0f);
+    Material *material = new Material(shader, glm::vec3(1, 1, 1), glm::vec3(0.5f, 0.5f, 0.5f), glm::vec3(1, 1, 1),
+                                      256.0f);
+    LoadImage("container.png", GL_TEXTURE0, GL_RGBA, GL_RGBA);
     shader->SendUniform3f("material.ambient", material->ambient);
-    shader->SendUniform3f("material.diffuse", material->diffuse);
+    shader->SendUniform1i("material.diffuse", 0);
     shader->SendUniform3f("material.specular", material->specular);
     shader->SendUniform1f("material.shininess", material->shininess);
+    //shader->SendUniform1i("material.texture",0);
     //glUniform1f(glGetUniformLocation(shader->shaderProgram, "material.shininess"), material->shininess);
     //glUniform1i(glGetUniformLocation(shader->shaderProgram, "texture_"), 0);
     //glUniform1i(glGetUniformLocation(shader->shaderProgram, "textureFace"), 3);
@@ -239,6 +292,10 @@ void ProcessInput(GLFWwindow *window) {
 }
 
 void LoadImage(const char *fileName, GLenum textureChannel, GLenum localFormat, GLenum targetFormat) {
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     int width, height, channel;
     unsigned char *data = stbi_load(fileName, &width, &height, &channel, 0);
     if (data != nullptr) {

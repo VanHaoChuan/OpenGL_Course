@@ -27,6 +27,8 @@ public:
 
     void SendUniform1f(const char *paramName, float param);
 
+    void SendUniform1i(const char *paramName, int param);
+
     std::string vertexString;
     std::string fragmentString;
     const char *fragmentSource;

@@ -17,7 +17,8 @@ public:
     glm::vec3 specular;
     float shininess;
 
-    Material(Shader *_shader, glm::vec3 _diffuse, glm::vec3 _ambient, glm::vec3 _specular, float _shininess);
+    Material(Shader *_shader, glm::vec3 _diffuse, glm::vec3 _ambient, glm::vec3 _specular,
+             float _shininess);
 
     ~Material();
 };
