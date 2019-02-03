@@ -150,6 +150,33 @@ Camera.cpp.s:
 	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/Camera.cpp.s
 .PHONY : Camera.cpp.s
 
+Material.o: Material.cpp.o
+
+.PHONY : Material.o
+
+# target to build an object file
+Material.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/Material.cpp.o
+.PHONY : Material.cpp.o
+
+Material.i: Material.cpp.i
+
+.PHONY : Material.i
+
+# target to preprocess a source file
+Material.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/Material.cpp.i
+.PHONY : Material.cpp.i
+
+Material.s: Material.cpp.s
+
+.PHONY : Material.s
+
+# target to generate assembly for a file
+Material.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/Material.cpp.s
+.PHONY : Material.cpp.s
+
 Shader.o: Shader.cpp.o
 
 .PHONY : Shader.o
@@ -216,6 +243,9 @@ help:
 	@echo "... Camera.o"
 	@echo "... Camera.i"
 	@echo "... Camera.s"
+	@echo "... Material.o"
+	@echo "... Material.i"
+	@echo "... Material.s"
 	@echo "... Shader.o"
 	@echo "... Shader.i"
 	@echo "... Shader.s"

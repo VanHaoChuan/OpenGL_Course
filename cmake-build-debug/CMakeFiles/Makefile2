@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-de
 CMakeFiles/OpenGL_Course.dir/all:
 	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/depend
 	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target OpenGL_Course"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target OpenGL_Course"
 .PHONY : CMakeFiles/OpenGL_Course.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/OpenGL_Course.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/OpenGL_Course.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGL_Course.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/OpenGL_Course.dir/rule

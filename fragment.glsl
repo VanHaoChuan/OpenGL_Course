@@ -13,11 +13,11 @@ uniform vec3 cameraPos;
 void main() {
   //vec3 diffuseDir = normalize();
   vec3 lightDir = normalize(lightPos - fragPos);
-  vec3 reflectDir = reflect(-lightDir, aNormal);
+  vec3 reflectVec = reflect(-lightDir, aNormal);
   vec3 diffuse = max(dot(lightDir, aNormal) * lightColor,0);
-  vec3 cameraDir = normalize(cameraPos - fragPos);
-  float specularAmount = pow(max(dot(reflectDir,cameraDir),0),32) ;
-  vec3 specular = specularAmount * lightColor;
-  fragColor = vec4((diffuse + toyColor + specular) * toyColor,1.0f);
+  vec3 cameraVec = normalize(cameraPos - fragPos);
+  float specularDmag = pow(max(dot(cameraVec, reflectVec),0),256);
+  vec3 specular = specularDmag * lightColor;
+  fragColor = vec4((diffuse + toyColor + specular) * objColor,1.0f);
   //fragColor = vec4(objColor * toyColor,1.0f);// * mix(texture(texture_,coord),texture(textureFace,coord),0.2f);
 }

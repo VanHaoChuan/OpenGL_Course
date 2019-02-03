@@ -94,6 +94,12 @@
 		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/Camera.h">
 			<Option target="OpenGL_Course"/>
 		</Unit>
+		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/Material.cpp">
+			<Option target="OpenGL_Course"/>
+		</Unit>
+		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/Material.h">
+			<Option target="OpenGL_Course"/>
+		</Unit>
 		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.cpp">
 			<Option target="OpenGL_Course"/>
 		</Unit>
