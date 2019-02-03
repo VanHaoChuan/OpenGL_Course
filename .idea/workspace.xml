@@ -14,11 +14,20 @@
     <list default="true" id="af0d5e97-d666-4ab5-8b0c-4c325f777f05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/Camera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Material.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Material.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Material.h" beforeDir="false" afterPath="$PROJECT_DIR$/Material.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Shader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/Shader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/Camera.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/Camera.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/Shader.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/main.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL_Course" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL_Course" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/fragment.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertex.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/vertex.glsl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,41 +40,44 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/Material.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="17" selection-end-column="35" />
+            <state relative-caret-position="302">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="174" column="40" lean-forward="true" selection-start-line="174" selection-start-column="40" selection-end-line="174" selection-end-column="40" />
+            <state relative-caret-position="291">
+              <caret line="172" column="67" selection-start-line="172" selection-start-column="67" selection-end-line="172" selection-end-column="67" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#233#255#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Material.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Material.h">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Shader.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="78" column="69" selection-start-line="78" selection-start-column="69" selection-end-line="78" selection-end-column="69" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Camera.cpp">
+        <entry file="file://$PROJECT_DIR$/Material.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="25" column="40" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="40" />
+            <state relative-caret-position="372">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+              <folding>
+                <element signature="e#113#135#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fragment.glsl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="408">
+              <caret line="28" column="75" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -82,22 +94,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vertex.glsl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="271">
               <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wall.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Camera.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            <state relative-caret-position="413">
+              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
               <folding>
                 <element signature="e#109#131#0" expanded="true" />
               </folding>
@@ -108,20 +115,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Shader.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="300">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
               <folding>
                 <element signature="e#109#128#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shader.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -155,6 +153,8 @@
       <find>glUnifo</find>
       <find>transl</find>
       <find>trans</find>
+      <find>Material</find>
+      <find>ambientColor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,12 +164,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Shader.h" />
-        <option value="$PROJECT_DIR$/Shader.cpp" />
-        <option value="$PROJECT_DIR$/Camera.h" />
         <option value="$PROJECT_DIR$/Camera.cpp" />
         <option value="$PROJECT_DIR$/fragment.glsl" />
         <option value="$PROJECT_DIR$/vertex.glsl" />
+        <option value="$PROJECT_DIR$/Camera.h" />
+        <option value="$PROJECT_DIR$/Material.h" />
+        <option value="$PROJECT_DIR$/Material.cpp" />
+        <option value="$PROJECT_DIR$/Shader.h" />
+        <option value="$PROJECT_DIR$/Shader.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
@@ -249,12 +251,12 @@
       <workItem from="1549097187651" duration="11695000" />
       <workItem from="1549196139858" duration="640000" />
       <workItem from="1549198962543" duration="794000" />
-      <workItem from="1549199880467" duration="609000" />
+      <workItem from="1549199880467" duration="3817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29844000" />
+    <option name="totallyTimeSpent" value="33052000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -267,8 +269,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28243726" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28172043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -290,6 +293,29 @@
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Key Promoter X" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28243726" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.44946235" weight="0.32824427" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49892473" weight="0.3994911" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3287841" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" sideWeight="0.44874552" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49964157" weight="0.32951653" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.55053765" side_tool="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3287841" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.3287841" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Key Promoter X" order="4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -344,61 +370,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Camera.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
+        <state relative-caret-position="413">
           <caret line="25" column="40" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fragment.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vertex.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wall.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/vertex.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Camera.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="413">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding>
             <element signature="e#109#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Material.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#113#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fragment.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="75" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Shader.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="300">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding>
             <element signature="e#109#128#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Material.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Shader.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        <state relative-caret-position="237">
+          <caret line="78" column="69" selection-start-line="78" selection-start-column="69" selection-end-line="78" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="174" column="40" lean-forward="true" selection-start-line="174" selection-start-column="40" selection-end-line="174" selection-end-column="40" />
+        <state relative-caret-position="291">
+          <caret line="172" column="67" selection-start-line="172" selection-start-column="67" selection-end-line="172" selection-end-column="67" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#233#255#0" expanded="true" />
           </folding>
         </state>
       </provider>

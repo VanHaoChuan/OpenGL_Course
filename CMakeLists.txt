@@ -14,5 +14,5 @@ set(GLFW_LINK /usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.dylib)
 link_libraries(${OPENGL} ${GLEW_LINK} ${GLFW_LINK})
 set(SOURCE_FILES main.cpp)
 
-add_executable(OpenGL_Course main.cpp Shader.cpp Shader.h stb_image.h Camera.cpp Camera.h Material.cpp Material.h)
+add_executable(OpenGL_Course main.cpp Shader.cpp Shader.h stb_image.h Camera.cpp Camera.h Material.cpp Material.h Material.cpp Material.h)
 target_link_libraries(OpenGL_Course ${OPENGL_LIBRARY})

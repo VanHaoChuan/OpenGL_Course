@@ -28,7 +28,9 @@ public:
     float sensitivity;
     float speedZ;
     float speedX;
+
     void UpdateCameraPosition();
+
     glm::mat4 GetViewMatrix();
 
 private:

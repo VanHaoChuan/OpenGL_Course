@@ -66,6 +66,15 @@ void Shader::CheckShaderError(unsigned int shaderID, char *kind, char *result) {
     }
 }
 
-void Shader::SendUniformMat4(glm::mat4 matrix, const char *targetName) {
-    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, targetName), 1, GL_FALSE, glm::value_ptr(matrix));
+void Shader::SendUniformMat4(const char *paramName, glm::mat4 param) {
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, paramName), 1, GL_FALSE, glm::value_ptr(param));
+}
+
+
+void Shader::SendUniform3f(const char *paramName, glm::vec3 param) {
+    glUniform3f(glGetUniformLocation(shaderProgram, paramName), param.x, param.y, param.z);
+}
+
+void Shader::SendUniform1f(const char *paramName, float param) {
+    glUniform1f(glGetUniformLocation(shaderProgram, paramName), param);
 }

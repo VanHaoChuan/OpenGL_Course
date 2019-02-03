@@ -11,6 +11,7 @@
 
 #include "stb_image.h"
 #include "Camera.h"
+#include "Material.h"
 
 #define GLEW_STATIC
 #define WINDOW_TITLE "OpenGL Core"
@@ -162,10 +163,15 @@ int main() {
     //LoadImage("awesomeface.png", GL_TEXTURE3, GL_RGBA, GL_RGBA);
 
     glUniform3f(glGetUniformLocation(shader->shaderProgram, "objColor"), 0.1, 0.1f, 0.31f);
-    glUniform3f(glGetUniformLocation(shader->shaderProgram, "toyColor"), 0, 0.1f, 0.1f);
+    glUniform3f(glGetUniformLocation(shader->shaderProgram, "ambientColor"), 0.5, 0.5f, 0.5f);
     glUniform3f(glGetUniformLocation(shader->shaderProgram, "lightPos"), 10, 10, 10);
     glUniform3f(glGetUniformLocation(shader->shaderProgram, "lightColor"), 1, 1, 1);
-
+    Material *material = new Material(shader, glm::vec3(0, 0, 1), glm::vec3(1, 1, 1), glm::vec3(1, 1, 1), 256.0f);
+    shader->SendUniform3f("material.ambient", material->ambient);
+    shader->SendUniform3f("material.diffuse", material->diffuse);
+    shader->SendUniform3f("material.specular", material->specular);
+    shader->SendUniform1f("material.shininess", material->shininess);
+    //glUniform1f(glGetUniformLocation(shader->shaderProgram, "material.shininess"), material->shininess);
     //glUniform1i(glGetUniformLocation(shader->shaderProgram, "texture_"), 0);
     //glUniform1i(glGetUniformLocation(shader->shaderProgram, "textureFace"), 3);
     while (!glfwWindowShouldClose(window)) {
@@ -180,14 +186,14 @@ int main() {
         glm::mat4 projection = glm::mat4(1.0f);
         projection = glm::perspective(glm::radians(45.0f), (float) (WINDOW_WIDTH / WINDOW_HEIGHT), 0.1f, 100.0f);
 
-        shader->SendUniformMat4(view, "view");
-        shader->SendUniformMat4(projection, "projection");
+        shader->SendUniformMat4("view", view);
+        shader->SendUniformMat4("projection", projection);
         for (const auto &cubePosition : cubePositions) {
             glm::mat4 model = glm::mat4(1);
             model = glm::translate(model, cubePosition);
             model = glm::rotate(model, glm::radians(0.0f), glm::vec3(0.5f, 0.3f, 0.5f));
             //model = glm::scale(model, glm::vec3(2, 2, 1));
-            shader->SendUniformMat4(model, "model");
+            shader->SendUniformMat4("model", model);
             glDrawArrays(GL_TRIANGLES, 0, 36);
         }
 

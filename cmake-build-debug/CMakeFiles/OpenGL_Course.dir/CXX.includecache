@@ -12,6 +12,18 @@ glm/glm.hpp
 glm/gtc/matrix_transform.hpp
 /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtc/matrix_transform.hpp
 
+/Users/youngfan/Documents/GitHub/OpenGL_Course/Material.h
+glm/glm.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/glm.hpp
+glm/gtc/matrix_transform.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtc/matrix_transform.hpp
+Shader.h
+/Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.h
+
+/Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.cpp
+Shader.h
+/Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.h
+
 /Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.h
 iostream
 -
@@ -771,6 +783,8 @@ stb_image.h
 /Users/youngfan/Documents/GitHub/OpenGL_Course/stb_image.h
 Camera.h
 /Users/youngfan/Documents/GitHub/OpenGL_Course/Camera.h
+Material.h
+/Users/youngfan/Documents/GitHub/OpenGL_Course/Material.h
 
 /Users/youngfan/Documents/GitHub/OpenGL_Course/stb_image.h
 stb_image.h

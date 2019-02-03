@@ -19,9 +19,13 @@ class Shader {
 public:
     Shader(const char *vertexPath, const char *fragmentPath);
 
-    void SendUniformMat4(glm::mat4 matrix, const char *targetName);
+    void SendUniformMat4(const char *paramName, glm::mat4 param);
 
     void UseProgram();
+
+    void SendUniform3f(const char *paramName, glm::vec3 param);
+
+    void SendUniform1f(const char *paramName, float param);
 
     std::string vertexString;
     std::string fragmentString;
