@@ -219,9 +219,10 @@ int main() {
     Material *material = new Material(shader, glm::vec3(1, 1, 1), glm::vec3(0.5f, 0.5f, 0.5f), glm::vec3(1, 1, 1),
                                       256.0f);
     LoadImage("container.png", GL_TEXTURE0, GL_RGBA, GL_RGBA);
+    LoadImage("container_specular.png",GL_TEXTURE1,GL_RGBA,GL_RGBA);
     shader->SendUniform3f("material.ambient", material->ambient);
     shader->SendUniform1i("material.diffuse", 0);
-    shader->SendUniform3f("material.specular", material->specular);
+    shader->SendUniform1i("material.specular", 1);
     shader->SendUniform1f("material.shininess", material->shininess);
     //shader->SendUniform1i("material.texture",0);
     //glUniform1f(glGetUniformLocation(shader->shaderProgram, "material.shininess"), material->shininess);
