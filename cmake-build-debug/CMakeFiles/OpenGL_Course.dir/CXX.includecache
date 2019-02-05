@@ -12,6 +12,12 @@ glm/glm.hpp
 glm/gtc/matrix_transform.hpp
 /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtc/matrix_transform.hpp
 
+/Users/youngfan/Documents/GitHub/OpenGL_Course/LightPoint.h
+glm/glm.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/glm.hpp
+glm/gtx/rotate_vector.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtx/rotate_vector.hpp
+
 /Users/youngfan/Documents/GitHub/OpenGL_Course/Material.h
 glm/glm.hpp
 /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/glm.hpp
@@ -690,6 +696,26 @@ type_ptr.inl
 cstring
 -
 
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtx/rotate_vector.hpp
+../glm.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/glm.hpp
+../gtx/transform.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtx/transform.hpp
+rotate_vector.inl
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtx/rotate_vector.inl
+
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtx/rotate_vector.inl
+
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtx/transform.hpp
+../glm.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/glm.hpp
+../gtc/matrix_transform.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtc/matrix_transform.hpp
+transform.inl
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtx/transform.inl
+
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtx/transform.inl
+
 /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/integer.hpp
 detail/func_integer.hpp
 /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_integer.hpp
@@ -758,6 +784,12 @@ detail/type_vec4.hpp
 detail/func_vector_relational.hpp
 /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_vector_relational.hpp
 
+/Users/youngfan/Documents/GitHub/OpenGL_Course/lightPoint.h
+glm/glm.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/glm.hpp
+glm/gtx/rotate_vector.hpp
+/Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtx/rotate_vector.hpp
+
 /Users/youngfan/Documents/GitHub/OpenGL_Course/main.cpp
 iostream
 -
@@ -775,12 +807,16 @@ Shader.h
 /Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.h
 vector
 -
+lightPoint.h
+/Users/youngfan/Documents/GitHub/OpenGL_Course/lightPoint.h
 stb_image.h
 /Users/youngfan/Documents/GitHub/OpenGL_Course/stb_image.h
 Camera.h
 /Users/youngfan/Documents/GitHub/OpenGL_Course/Camera.h
 Material.h
 /Users/youngfan/Documents/GitHub/OpenGL_Course/Material.h
+LightPoint.h
+/Users/youngfan/Documents/GitHub/OpenGL_Course/LightPoint.h
 
 /Users/youngfan/Documents/GitHub/OpenGL_Course/stb_image.h
 stb_image.h

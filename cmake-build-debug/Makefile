@@ -150,6 +150,60 @@ Camera.cpp.s:
 	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/Camera.cpp.s
 .PHONY : Camera.cpp.s
 
+LightDirectional.o: LightDirectional.cpp.o
+
+.PHONY : LightDirectional.o
+
+# target to build an object file
+LightDirectional.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.o
+.PHONY : LightDirectional.cpp.o
+
+LightDirectional.i: LightDirectional.cpp.i
+
+.PHONY : LightDirectional.i
+
+# target to preprocess a source file
+LightDirectional.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.i
+.PHONY : LightDirectional.cpp.i
+
+LightDirectional.s: LightDirectional.cpp.s
+
+.PHONY : LightDirectional.s
+
+# target to generate assembly for a file
+LightDirectional.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.s
+.PHONY : LightDirectional.cpp.s
+
+LightPoint.o: LightPoint.cpp.o
+
+.PHONY : LightPoint.o
+
+# target to build an object file
+LightPoint.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.o
+.PHONY : LightPoint.cpp.o
+
+LightPoint.i: LightPoint.cpp.i
+
+.PHONY : LightPoint.i
+
+# target to preprocess a source file
+LightPoint.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.i
+.PHONY : LightPoint.cpp.i
+
+LightPoint.s: LightPoint.cpp.s
+
+.PHONY : LightPoint.s
+
+# target to generate assembly for a file
+LightPoint.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.s
+.PHONY : LightPoint.cpp.s
+
 Material.o: Material.cpp.o
 
 .PHONY : Material.o
@@ -243,6 +297,12 @@ help:
 	@echo "... Camera.o"
 	@echo "... Camera.i"
 	@echo "... Camera.s"
+	@echo "... LightDirectional.o"
+	@echo "... LightDirectional.i"
+	@echo "... LightDirectional.s"
+	@echo "... LightPoint.o"
+	@echo "... LightPoint.i"
+	@echo "... LightPoint.s"
 	@echo "... Material.o"
 	@echo "... Material.i"
 	@echo "... Material.s"

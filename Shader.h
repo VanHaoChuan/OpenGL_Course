@@ -23,7 +23,7 @@ public:
 
     void UseProgram();
 
-    void SendUniform3f(const char *paramName, glm::vec3 param);
+    void SendUniform1v(const char *paramName, glm::vec3 param);
 
     void SendUniform1f(const char *paramName, float param);
 

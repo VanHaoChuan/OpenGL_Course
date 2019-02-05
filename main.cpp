@@ -6,12 +6,14 @@
 #include "glm/gtc/type_ptr.hpp"
 #include "Shader.h"
 #include <vector>
+#include "lightPoint.h"
 
 #define STB_IMAGE_IMPLEMENTATION
 
 #include "stb_image.h"
 #include "Camera.h"
 #include "Material.h"
+#include "LightPoint.h"
 
 #define GLEW_STATIC
 #define WINDOW_TITLE "OpenGL Core"
@@ -129,9 +131,12 @@ glm::vec3 cubePositions[] = {
 };
 double lastX, lastY;
 bool firstMouse = true;
-Camera *camera = new Camera(glm::vec3(0, 0, 3), glm::radians(15.0f), glm::radians(180.0f), glm::vec3(0, 1, 0));
-//Camera *camera = new Camera(glm::vec3(0, 0, 3), glm::vec3(0, 0, 0), glm::vec3(0, 1, 0));;
+Camera *camera = new Camera(glm::vec3(0, 0, 0), glm::radians(15.0f), glm::radians(180.0f), glm::vec3(0, 1, 0));
 
+//Camera *camera = new Camera(glm::vec3(0, 0, 3), glm::vec3(0, 0, 0), glm::vec3(0, 1, 0));;
+LightPoint lightPoint = LightPoint(glm::vec3(2, 2, 2),
+                                   glm::vec3(glm::radians(5.0f), glm::radians(45.0f), 0),
+                                   glm::vec3(1.0f, 1.0f, 1.0f));
 
 void WindowBufferSizeChange(GLFWwindow *, int, int);
 
@@ -147,6 +152,7 @@ int main() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_SAMPLES, 4);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     GLFWwindow *window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE, NULL, NULL);
     if (window == nullptr) {
@@ -167,7 +173,7 @@ int main() {
     glfwSetFramebufferSizeCallback(window, WindowBufferSizeChange);
     glfwSetCursorPosCallback(window, ProcessMouse);
     glEnable(GL_DEPTH_TEST);
-
+    glEnable(GL_MULTISAMPLE);
     Shader *shader = new Shader("vertex.glsl", "fragment.glsl");
     shader->UseProgram();
 
@@ -212,18 +218,27 @@ int main() {
 
     //LoadImage("wall.jpg", GL_TEXTURE0, GL_RGB, GL_RGB);
     //LoadImage("awesomeface.png", GL_TEXTURE3, GL_RGBA, GL_RGBA);
-    glUniform3f(glGetUniformLocation(shader->shaderProgram, "objColor"), 1, 1, 1);
-    glUniform3f(glGetUniformLocation(shader->shaderProgram, "ambientColor"), 0.3f, 0.3f, 0.3f);
-    glUniform3f(glGetUniformLocation(shader->shaderProgram, "lightPos"), 10, 10, 10);
-    glUniform3f(glGetUniformLocation(shader->shaderProgram, "lightColor"), 1, 1, 1);
-    Material *material = new Material(shader, glm::vec3(1, 1, 1), glm::vec3(0.5f, 0.5f, 0.5f), glm::vec3(1, 1, 1),
+    glUniform3f(glGetUniformLocation(shader->shaderProgram, "objColor"), 0.5f, 0.5f, 0.5f);
+    glUniform3f(glGetUniformLocation(shader->shaderProgram, "ambientColor"), 0.4f, 0.4f, 0.4f);
+    glUniform3f(glGetUniformLocation(shader->shaderProgram, "lightPos"), lightPoint.position.x,
+                lightPoint.position.y,
+                lightPoint.position.z);
+    glUniform3f(glGetUniformLocation(shader->shaderProgram, "lightColor"), lightPoint.color.x,
+                lightPoint.color.y, lightPoint.color.z);
+
+
+    Material *material = new Material(shader, glm::vec3(1, 1, 1), glm::vec3(0.6f, 0.6f, 0.6f), glm::vec3(1, 1, 1),
                                       256.0f);
     LoadImage("container.png", GL_TEXTURE0, GL_RGBA, GL_RGBA);
-    LoadImage("container_specular.png",GL_TEXTURE1,GL_RGBA,GL_RGBA);
-    shader->SendUniform3f("material.ambient", material->ambient);
+    LoadImage("container_specular.png", GL_TEXTURE1, GL_RGBA, GL_RGBA);
+    shader->SendUniform1v("material.ambient", material->ambient);
     shader->SendUniform1i("material.diffuse", 0);
     shader->SendUniform1i("material.specular", 1);
     shader->SendUniform1f("material.shininess", material->shininess);
+    shader->SendUniform1v("lightDirUniform", lightPoint.direction);
+    glUniform1f(glGetUniformLocation(shader->shaderProgram, "lightPoint.constant"), lightPoint.constant);
+    glUniform1f(glGetUniformLocation(shader->shaderProgram, "lightPoint.linear"), lightPoint.linear);
+    glUniform1f(glGetUniformLocation(shader->shaderProgram, "lightPoint.quadratic"), lightPoint.quadratic);
     //shader->SendUniform1i("material.texture",0);
     //glUniform1f(glGetUniformLocation(shader->shaderProgram, "material.shininess"), material->shininess);
     //glUniform1i(glGetUniformLocation(shader->shaderProgram, "texture_"), 0);

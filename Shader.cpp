@@ -71,7 +71,7 @@ void Shader::SendUniformMat4(const char *paramName, glm::mat4 param) {
 }
 
 
-void Shader::SendUniform3f(const char *paramName, glm::vec3 param) {
+void Shader::SendUniform1v(const char *paramName, glm::vec3 param) {
     glUniform3f(glGetUniformLocation(shaderProgram, paramName), param.x, param.y, param.z);
 }
 
