@@ -94,16 +94,16 @@
 		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/Camera.h">
 			<Option target="OpenGL_Course"/>
 		</Unit>
-		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/LightDirectional.cpp">
-			<Option target="OpenGL_Course"/>
-		</Unit>
-		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/LightDirectional.h">
-			<Option target="OpenGL_Course"/>
-		</Unit>
 		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/LightPoint.cpp">
 			<Option target="OpenGL_Course"/>
 		</Unit>
 		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/LightPoint.h">
+			<Option target="OpenGL_Course"/>
+		</Unit>
+		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/LightSpot.cpp">
+			<Option target="OpenGL_Course"/>
+		</Unit>
+		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/LightSpot.h">
 			<Option target="OpenGL_Course"/>
 		</Unit>
 		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/Material.cpp">
@@ -116,6 +116,12 @@
 			<Option target="OpenGL_Course"/>
 		</Unit>
 		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.h">
+			<Option target="OpenGL_Course"/>
+		</Unit>
+		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/lightDirectional.cpp">
+			<Option target="OpenGL_Course"/>
+		</Unit>
+		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/lightDirectional.h">
 			<Option target="OpenGL_Course"/>
 		</Unit>
 		<Unit filename="/Users/youngfan/Documents/GitHub/OpenGL_Course/main.cpp">

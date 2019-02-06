@@ -87,9 +87,9 @@ CMakeFiles/OpenGL_Course.dir/Camera.cpp.o
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vec3.hpp
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vec4.hpp
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vector_relational.hpp
-CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.o
- /Users/youngfan/Documents/GitHub/OpenGL_Course/LightDirectional.cpp
- /Users/youngfan/Documents/GitHub/OpenGL_Course/LightDirectional.h
+CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.o
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/LightPoint.cpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/LightPoint.h
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/common.hpp
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/_fixes.hpp
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/_swizzle.hpp
@@ -177,9 +177,9 @@ CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.o
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vec3.hpp
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vec4.hpp
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vector_relational.hpp
-CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.o
- /Users/youngfan/Documents/GitHub/OpenGL_Course/LightPoint.cpp
- /Users/youngfan/Documents/GitHub/OpenGL_Course/LightPoint.h
+CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.o
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/LightSpot.cpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/LightSpot.h
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/common.hpp
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/_fixes.hpp
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/_swizzle.hpp
@@ -448,9 +448,100 @@ CMakeFiles/OpenGL_Course.dir/Shader.cpp.o
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vec3.hpp
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vec4.hpp
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vector_relational.hpp
+CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.o
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/LightDirectional.h
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/common.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/_fixes.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/_swizzle.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/_swizzle_func.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/_vectorize.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_common.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_common.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_exponential.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_exponential.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_geometric.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_geometric.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_integer.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_integer.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_matrix.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_matrix.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_packing.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_packing.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_trigonometric.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_trigonometric.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_vector_relational.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/func_vector_relational.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/precision.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/setup.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_float.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_half.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_half.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_int.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat2x2.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat2x2.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat2x3.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat2x3.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat2x4.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat2x4.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat3x2.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat3x2.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat3x3.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat3x3.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat3x4.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat3x4.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat4x2.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat4x2.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat4x3.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat4x3.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat4x4.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_mat4x4.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_vec.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_vec1.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_vec1.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_vec2.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_vec2.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_vec3.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_vec3.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_vec4.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_vec4.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_vec4_avx.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_vec4_avx2.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/detail/type_vec4_sse2.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/exponential.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/fwd.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/geometric.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/glm.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtc/constants.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtc/constants.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtc/matrix_transform.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtc/matrix_transform.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtx/rotate_vector.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtx/rotate_vector.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtx/transform.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/gtx/transform.inl
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/integer.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/mat2x2.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/mat2x3.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/mat2x4.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/mat3x2.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/mat3x3.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/mat3x4.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/mat4x2.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/mat4x3.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/mat4x4.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/matrix.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/packing.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/trigonometric.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vec2.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vec3.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vec4.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vector_relational.hpp
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/lightDirectional.cpp
 CMakeFiles/OpenGL_Course.dir/main.cpp.o
  /Users/youngfan/Documents/GitHub/OpenGL_Course/Camera.h
  /Users/youngfan/Documents/GitHub/OpenGL_Course/LightPoint.h
+ /Users/youngfan/Documents/GitHub/OpenGL_Course/LightSpot.h
  /Users/youngfan/Documents/GitHub/OpenGL_Course/Material.h
  /Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.h
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/common.hpp
@@ -544,6 +635,5 @@ CMakeFiles/OpenGL_Course.dir/main.cpp.o
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vec3.hpp
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vec4.hpp
  /Users/youngfan/Documents/GitHub/OpenGL_Course/glm/vector_relational.hpp
- /Users/youngfan/Documents/GitHub/OpenGL_Course/lightPoint.h
  /Users/youngfan/Documents/GitHub/OpenGL_Course/main.cpp
  /Users/youngfan/Documents/GitHub/OpenGL_Course/stb_image.h

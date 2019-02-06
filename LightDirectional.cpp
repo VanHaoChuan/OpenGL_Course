@@ -19,4 +19,6 @@ LightDirectional::LightDirectional(glm::vec3 _position, glm::vec3 _angles, glm::
     UpdateLightDirection();
 }
 
-LightDirectional::~LightDirectional() = default;
+LightDirectional::~LightDirectional() {
+
+}

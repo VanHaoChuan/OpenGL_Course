@@ -12,6 +12,10 @@ struct LightPoint
   float linear;
   float quadratic;
 };
+struct LightSpot
+{
+  float cosPhy;
+};
 out vec4 fragColor;
 //in vec2 coord;
 //uniform sampler2D texture_;
@@ -27,6 +31,7 @@ uniform vec3 cameraPos;
 uniform vec3 lightDirUniform;
 uniform Material material;
 uniform LightPoint lightPoint;
+uniform LightSpot lightSpot;
 void main() {
   //vec3 diffuseDir = normalize();
 
@@ -41,6 +46,16 @@ void main() {
   vec3 cameraVec = normalize(cameraPos - fragPos);
   vec3 specular = pow(max(dot(cameraVec, reflectVec),0), material.shininess) * lightColor * (texture(material.specular,texCoord).rgb + texture(material.diffuse,texCoord).rgb * 0.5f);
 
-  fragColor = vec4((ambient + diffuse * attenuation + specular * attenuation),1.0f);
+float cosTheta = dot(normalize(fragPos - lightPos), -1 * lightDirUniform);
+if(cosTheta > lightSpot.cosPhy)
+{
+
+  fragColor = vec4((ambient + diffuse + specular),1.0f);
+  //inside
+}else
+{
+  //outside
+  fragColor = vec4(vec3(1,1,1),1.0f);
+}
   //fragColor = vec4(objColor * ,1.0f);// * mix(texture(texture_,coord),texture(textureFace,coord),0.2f);
 }

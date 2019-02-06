@@ -150,33 +150,6 @@ Camera.cpp.s:
 	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/Camera.cpp.s
 .PHONY : Camera.cpp.s
 
-LightDirectional.o: LightDirectional.cpp.o
-
-.PHONY : LightDirectional.o
-
-# target to build an object file
-LightDirectional.cpp.o:
-	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.o
-.PHONY : LightDirectional.cpp.o
-
-LightDirectional.i: LightDirectional.cpp.i
-
-.PHONY : LightDirectional.i
-
-# target to preprocess a source file
-LightDirectional.cpp.i:
-	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.i
-.PHONY : LightDirectional.cpp.i
-
-LightDirectional.s: LightDirectional.cpp.s
-
-.PHONY : LightDirectional.s
-
-# target to generate assembly for a file
-LightDirectional.cpp.s:
-	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.s
-.PHONY : LightDirectional.cpp.s
-
 LightPoint.o: LightPoint.cpp.o
 
 .PHONY : LightPoint.o
@@ -203,6 +176,33 @@ LightPoint.s: LightPoint.cpp.s
 LightPoint.cpp.s:
 	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.s
 .PHONY : LightPoint.cpp.s
+
+LightSpot.o: LightSpot.cpp.o
+
+.PHONY : LightSpot.o
+
+# target to build an object file
+LightSpot.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.o
+.PHONY : LightSpot.cpp.o
+
+LightSpot.i: LightSpot.cpp.i
+
+.PHONY : LightSpot.i
+
+# target to preprocess a source file
+LightSpot.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.i
+.PHONY : LightSpot.cpp.i
+
+LightSpot.s: LightSpot.cpp.s
+
+.PHONY : LightSpot.s
+
+# target to generate assembly for a file
+LightSpot.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.s
+.PHONY : LightSpot.cpp.s
 
 Material.o: Material.cpp.o
 
@@ -258,6 +258,33 @@ Shader.cpp.s:
 	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/Shader.cpp.s
 .PHONY : Shader.cpp.s
 
+lightDirectional.o: lightDirectional.cpp.o
+
+.PHONY : lightDirectional.o
+
+# target to build an object file
+lightDirectional.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.o
+.PHONY : lightDirectional.cpp.o
+
+lightDirectional.i: lightDirectional.cpp.i
+
+.PHONY : lightDirectional.i
+
+# target to preprocess a source file
+lightDirectional.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.i
+.PHONY : lightDirectional.cpp.i
+
+lightDirectional.s: lightDirectional.cpp.s
+
+.PHONY : lightDirectional.s
+
+# target to generate assembly for a file
+lightDirectional.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGL_Course.dir/build.make CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.s
+.PHONY : lightDirectional.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -297,18 +324,21 @@ help:
 	@echo "... Camera.o"
 	@echo "... Camera.i"
 	@echo "... Camera.s"
-	@echo "... LightDirectional.o"
-	@echo "... LightDirectional.i"
-	@echo "... LightDirectional.s"
 	@echo "... LightPoint.o"
 	@echo "... LightPoint.i"
 	@echo "... LightPoint.s"
+	@echo "... LightSpot.o"
+	@echo "... LightSpot.i"
+	@echo "... LightSpot.s"
 	@echo "... Material.o"
 	@echo "... Material.i"
 	@echo "... Material.s"
 	@echo "... Shader.o"
 	@echo "... Shader.i"
 	@echo "... Shader.s"
+	@echo "... lightDirectional.o"
+	@echo "... lightDirectional.i"
+	@echo "... lightDirectional.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

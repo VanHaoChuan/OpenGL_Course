@@ -109,18 +109,18 @@ CMakeFiles/OpenGL_Course.dir/Material.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL_Course.dir/Material.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/youngfan/Documents/GitHub/OpenGL_Course/Material.cpp -o CMakeFiles/OpenGL_Course.dir/Material.cpp.s
 
-CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.o: CMakeFiles/OpenGL_Course.dir/flags.make
-CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.o: ../LightDirectional.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.o -c /Users/youngfan/Documents/GitHub/OpenGL_Course/LightDirectional.cpp
+CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.o: CMakeFiles/OpenGL_Course.dir/flags.make
+CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.o: ../lightDirectional.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.o -c /Users/youngfan/Documents/GitHub/OpenGL_Course/lightDirectional.cpp
 
-CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/youngfan/Documents/GitHub/OpenGL_Course/LightDirectional.cpp > CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.i
+CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/youngfan/Documents/GitHub/OpenGL_Course/lightDirectional.cpp > CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.i
 
-CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/youngfan/Documents/GitHub/OpenGL_Course/LightDirectional.cpp -o CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.s
+CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/youngfan/Documents/GitHub/OpenGL_Course/lightDirectional.cpp -o CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.s
 
 CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.o: CMakeFiles/OpenGL_Course.dir/flags.make
 CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.o: ../LightPoint.cpp
@@ -135,14 +135,28 @@ CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/youngfan/Documents/GitHub/OpenGL_Course/LightPoint.cpp -o CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.s
 
+CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.o: CMakeFiles/OpenGL_Course.dir/flags.make
+CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.o: ../LightSpot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.o -c /Users/youngfan/Documents/GitHub/OpenGL_Course/LightSpot.cpp
+
+CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/youngfan/Documents/GitHub/OpenGL_Course/LightSpot.cpp > CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.i
+
+CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/youngfan/Documents/GitHub/OpenGL_Course/LightSpot.cpp -o CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.s
+
 # Object files for target OpenGL_Course
 OpenGL_Course_OBJECTS = \
 "CMakeFiles/OpenGL_Course.dir/main.cpp.o" \
 "CMakeFiles/OpenGL_Course.dir/Shader.cpp.o" \
 "CMakeFiles/OpenGL_Course.dir/Camera.cpp.o" \
 "CMakeFiles/OpenGL_Course.dir/Material.cpp.o" \
-"CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.o" \
-"CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.o"
+"CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.o" \
+"CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.o" \
+"CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.o"
 
 # External object files for target OpenGL_Course
 OpenGL_Course_EXTERNAL_OBJECTS =
@@ -151,13 +165,14 @@ OpenGL_Course: CMakeFiles/OpenGL_Course.dir/main.cpp.o
 OpenGL_Course: CMakeFiles/OpenGL_Course.dir/Shader.cpp.o
 OpenGL_Course: CMakeFiles/OpenGL_Course.dir/Camera.cpp.o
 OpenGL_Course: CMakeFiles/OpenGL_Course.dir/Material.cpp.o
-OpenGL_Course: CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.o
+OpenGL_Course: CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.o
 OpenGL_Course: CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.o
+OpenGL_Course: CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.o
 OpenGL_Course: CMakeFiles/OpenGL_Course.dir/build.make
 OpenGL_Course: /usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.dylib
 OpenGL_Course: /usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.dylib
 OpenGL_Course: CMakeFiles/OpenGL_Course.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable OpenGL_Course"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable OpenGL_Course"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenGL_Course.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

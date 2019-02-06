@@ -5,10 +5,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/youngfan/Documents/GitHub/OpenGL_Course/Camera.cpp" "/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/Camera.cpp.o"
-  "/Users/youngfan/Documents/GitHub/OpenGL_Course/LightDirectional.cpp" "/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/LightDirectional.cpp.o"
   "/Users/youngfan/Documents/GitHub/OpenGL_Course/LightPoint.cpp" "/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/LightPoint.cpp.o"
+  "/Users/youngfan/Documents/GitHub/OpenGL_Course/LightSpot.cpp" "/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/LightSpot.cpp.o"
   "/Users/youngfan/Documents/GitHub/OpenGL_Course/Material.cpp" "/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/Material.cpp.o"
   "/Users/youngfan/Documents/GitHub/OpenGL_Course/Shader.cpp" "/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/Shader.cpp.o"
+  "/Users/youngfan/Documents/GitHub/OpenGL_Course/lightDirectional.cpp" "/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/lightDirectional.cpp.o"
   "/Users/youngfan/Documents/GitHub/OpenGL_Course/main.cpp" "/Users/youngfan/Documents/GitHub/OpenGL_Course/cmake-build-debug/CMakeFiles/OpenGL_Course.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
